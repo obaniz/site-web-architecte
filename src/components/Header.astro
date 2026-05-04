@@ -1,0 +1,160 @@
+---
+const { pathname } = Astro.url;
+
+const navLinks = [
+  { label: 'Accueil', href: '/' },
+  { label: 'Réalisations', href: '/realisations/' },
+  { label: 'Prestations', href: '/prestations/' },
+  { label: "L'agence", href: '/agence/' },
+  { label: 'Contact', href: '/contact/' },
+];
+---
+
+<header class="header">
+  <div class="header__inner container">
+    <a href="/" class="header__logo">
+      <img src="/logo.jpg" alt="Caroline Guigné Architecte" class="header__logo-img" />
+    </a>
+
+    <nav class="header__nav" id="main-nav">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={['header__link', { 'header__link--active': pathname === link.href }]}
+        >
+          {link.label}
+        </a>
+      ))}
+    </nav>
+
+    <button class="header__hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+      <span class="header__hamburger-line"></span>
+    </button>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: var(--header-height);
+    background: var(--surface-focus);
+    display: flex;
+    align-items: center;
+  }
+
+  .header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header__logo-img {
+    height: 80px;
+    width: auto;
+  }
+
+  @media (max-width: 767px) {
+    .header__logo-img {
+      height: 56px;
+    }
+  }
+
+  .header__nav {
+    display: flex;
+    gap: var(--space-md);
+  }
+
+  .header__link {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--on-surface-tertiary);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .header__link:hover {
+    color: var(--on-surface);
+  }
+
+  .header__link--active {
+    color: var(--on-surface);
+    border-bottom-color: var(--accent);
+  }
+
+  .header__hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px;
+  }
+
+  .header__hamburger-line {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--on-surface);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  @media (max-width: 767px) {
+    .header__nav {
+      display: none;
+      position: fixed;
+      top: var(--header-height);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--surface-focus);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-lg);
+    }
+
+    .header__nav.open {
+      display: flex;
+    }
+
+    .header__link {
+      font-size: 1rem;
+    }
+
+    .header__hamburger {
+      display: flex;
+    }
+
+    .header__hamburger.open .header__hamburger-line:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .header__hamburger.open .header__hamburger-line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .header__hamburger.open .header__hamburger-line:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+</style>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('main-nav');
+
+  hamburger?.addEventListener('click', () => {
+    const isOpen = nav?.classList.toggle('open');
+    hamburger.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+</script>

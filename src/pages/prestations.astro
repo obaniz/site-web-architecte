@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PrestationBlock from '../components/PrestationBlock.astro';
+
+const prestations = [
+  {
+    title: 'Faisabilité',
+    description: "Analyse du site, du programme et des contraintes réglementaires. Étude de la faisabilité technique et financière de votre projet pour définir les grandes orientations avant de se lancer.",
+    image: '/images/prestations/faisabilite.jpg',
+    imageAlt: 'Illustration de faisabilité',
+    reversed: false,
+  },
+  {
+    title: "Conception avant-projet sommaire (APS) et l'avant-projet définitif (APD)",
+    description: "Élaboration des plans d'avant-projet sommaire puis détaillé. Définition des volumes, des matériaux et des ambiances. C'est l'étape où votre projet prend forme concrètement.",
+    image: '/images/prestations/conception.png',
+    imageAlt: 'Plan de conception architecturale',
+    reversed: true,
+  },
+  {
+    title: 'Mise au point technique et financière',
+    description: "Réalisation du dossier de consultation des entreprises (DCE). Plans techniques détaillés, descriptifs des travaux et estimation financière précise pour le lancement des appels d'offres.",
+    image: '/images/prestations/dce.jpg',
+    imageAlt: 'Plan DCE technique',
+    reversed: false,
+  },
+  {
+    title: 'Suivi de chantier',
+    description: "Direction et coordination des travaux sur le terrain. Réunions de chantier régulières, contrôle de la qualité d'exécution et respect du planning et du budget.",
+    image: '/images/prestations/chantier.png',
+    imageAlt: 'Photo de suivi de chantier',
+    reversed: true,
+  },
+];
+---
+
+<BaseLayout
+  title="Prestations"
+  description="Les prestations de Caroline Guigné Architecte : étude de faisabilité, conception (APS/APD), dossier de consultation des entreprises et suivi de chantier. Accompagnement complet à Bordeaux et en Gironde."
+  breadcrumbs={[{ name: 'Prestations', href: '/prestations/' }]}
+>
+  <div class="container">
+    <h1 class="text-display" style="padding-top: var(--space-lg);">Prestations</h1>
+    <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-lg);"></span>
+
+    <div class="prestations-list">
+      {prestations.map((p) => (
+        <PrestationBlock
+          title={p.title}
+          description={p.description}
+          image={p.image}
+          imageAlt={p.imageAlt}
+          reversed={p.reversed}
+        />
+      ))}
+    </div>
+  </div>
+
+  <style>
+    .prestations-list {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+      padding-bottom: var(--space-2xl);
+    }
+  </style>
+</BaseLayout>

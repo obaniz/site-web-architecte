@@ -1,0 +1,45 @@
+---
+interface Props {
+  images: string[];
+  alt: string;
+}
+
+const { images, alt } = Astro.props;
+---
+
+{images.length > 0 && (
+  <div class="gallery">
+    {images.map((src, i) => (
+      <div class="gallery__item">
+        <img src={src} alt={`${alt} - ${i + 1}`} loading="lazy" class="gallery__image" />
+      </div>
+    ))}
+  </div>
+)}
+
+<style>
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+    padding: var(--space-md) 0;
+  }
+
+  .gallery__item {
+    overflow: hidden;
+    background: var(--surface-container);
+  }
+
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+  }
+
+  @media (max-width: 767px) {
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

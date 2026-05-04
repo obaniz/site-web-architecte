@@ -1,0 +1,80 @@
+media:
+  input: public/images/projects
+  output: /images/projects
+
+content:
+  - name: projects
+    label: Projets
+    type: collection
+    path: src/content/projects
+    filename: "{fields.slug}.md"
+    view:
+      fields: [title, category, location, featured]
+      primary: title
+    fields:
+      - name: title
+        label: Titre du projet
+        type: string
+        required: true
+
+      - name: slug
+        label: "Identifiant URL (lettres, chiffres, tirets -- ex : maison-lulu)"
+        type: string
+        required: true
+        pattern:
+          regex: "^[a-z0-9-]+$"
+          message: "Uniquement des lettres minuscules, chiffres et tirets."
+
+      - name: category
+        label: Categorie
+        type: select
+        required: true
+        options:
+          values:
+            - { value: habitat, label: Habitat }
+            - { value: medical, label: Medical }
+            - { value: petite-enfance, label: "Petite enfance" }
+            - { value: bureaux, label: Bureaux }
+            - { value: commerces, label: Commerces }
+            - { value: erp, label: ERP }
+
+      - name: location
+        label: Lieu
+        type: string
+        required: true
+
+      - name: description
+        label: Description courte (affichee dans les listes)
+        type: string
+        required: true
+
+      - name: heroImage
+        label: "Photo principale"
+        description: "Format 16/9 paysage, definition conseillee 2000 x 1125 px, poids < 500 Ko, JPEG uniquement. Nom de fichier en minuscules avec tirets, sans accents."
+        type: image
+        required: true
+
+      - name: images
+        label: "Galerie d'images"
+        description: "Format 4/3 paysage, definition conseillee 1600 x 1200 px, poids < 300 Ko par image, JPEG uniquement. Nom de fichier en minuscules avec tirets, sans accents."
+        type: image
+        options:
+          multiple: true
+
+      - name: order
+        label: Ordre d'affichage dans les Realisations (0 = premier)
+        type: number
+        default: 0
+
+      - name: featured
+        label: Afficher ce projet dans le carrousel de la page d'accueil
+        type: boolean
+        default: false
+
+      - name: featuredOrder
+        label: "Position dans le carrousel (1 = premier, laisser vide si non featured)"
+        type: number
+
+      - name: body
+        label: Contenu detaille (texte long, affiche sur la page du projet)
+        type: text

@@ -1,0 +1,108 @@
+---
+const socialLinks = [
+  { label: 'Instagram', href: 'https://www.instagram.com/caroline_guigne_architecte/' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/caroline-guign%C3%A9-76b41726/' },
+  { label: 'BNI', href: 'https://bnifrance.fr/fr/memberdetails?encryptedMemberId=iApvVRABBasNJ3qGfkvjgg%3D%3D' },
+];
+---
+
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__left">
+      <span class="footer__logo">CG</span>
+      <p class="footer__address">
+        95 Rue du Palais Gallien<br />
+        33000 Bordeaux
+      </p>
+      <p class="footer__legal">Diplômée d'État HMONP en architecture, inscrite à l'Ordre</p>
+      <a href="/mentions-legales/" class="footer__legal-link">Mentions légales</a>
+    </div>
+
+    <div class="footer__right">
+      <nav class="footer__socials">
+        {socialLinks.map((link) => (
+          <a href={link.href} class="footer__social-link" target="_blank" rel="noopener noreferrer">
+            {link.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background: var(--surface-dark);
+    padding: var(--space-lg) 0;
+  }
+
+  .footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: var(--accent);
+    display: block;
+    margin-bottom: var(--space-sm);
+  }
+
+  .footer__address {
+    font-size: 0.85rem;
+    color: var(--on-dark);
+    line-height: 1.6;
+    margin-bottom: var(--space-xs);
+  }
+
+  .footer__legal {
+    font-size: 0.75rem;
+    color: var(--on-surface-tertiary);
+    font-style: italic;
+  }
+
+  .footer__legal-link {
+    display: inline-block;
+    font-size: 0.75rem;
+    color: var(--on-surface-tertiary);
+    margin-top: var(--space-xs);
+    border-bottom: 1px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .footer__legal-link:hover {
+    color: var(--on-dark);
+    border-bottom-color: var(--accent);
+  }
+
+  .footer__socials {
+    display: flex;
+    gap: var(--space-sm);
+  }
+
+  .footer__social-link {
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--on-dark);
+    transition: color 0.2s;
+  }
+
+  .footer__social-link:hover {
+    color: var(--accent);
+  }
+
+  @media (max-width: 767px) {
+    .footer__inner {
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .footer__socials {
+      flex-wrap: wrap;
+    }
+  }
+</style>

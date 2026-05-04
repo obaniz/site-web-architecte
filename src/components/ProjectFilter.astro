@@ -1,0 +1,75 @@
+---
+const categories = [
+  { value: 'all', label: 'Tous' },
+  { value: 'habitat', label: 'Habitat' },
+  { value: 'medical', label: 'Médical' },
+  { value: 'petite-enfance', label: 'Petite enfance' },
+  { value: 'bureaux', label: 'Bureaux' },
+  { value: 'commerces', label: 'Commerces' },
+  { value: 'erp', label: 'ERP' },
+];
+---
+
+<div class="filter-bar" id="project-filters">
+  {categories.map((cat) => (
+    <button
+      class:list={['filter-btn', { 'filter-btn--active': cat.value === 'all' }]}
+      data-category={cat.value}
+    >
+      {cat.label}
+    </button>
+  ))}
+</div>
+
+<style>
+  .filter-bar {
+    display: flex;
+    gap: var(--space-sm);
+    flex-wrap: wrap;
+    padding: var(--space-md) 0;
+  }
+
+  .filter-btn {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: var(--text-label);
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-wide);
+    color: var(--on-surface-tertiary);
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .filter-btn:hover {
+    color: var(--on-surface);
+  }
+
+  .filter-btn--active {
+    color: var(--on-surface);
+    border-bottom-color: var(--accent);
+  }
+</style>
+
+<script>
+  const filterBar = document.getElementById('project-filters');
+  const grid = document.getElementById('project-grid');
+
+  filterBar?.addEventListener('click', (e) => {
+    const btn = (e.target as HTMLElement).closest('.filter-btn') as HTMLElement;
+    if (!btn) return;
+
+    filterBar.querySelectorAll('.filter-btn').forEach((b) => b.classList.remove('filter-btn--active'));
+    btn.classList.add('filter-btn--active');
+
+    const category = btn.dataset.category;
+    grid?.querySelectorAll('[data-category]').forEach((card) => {
+      const el = card as HTMLElement;
+      if (category === 'all' || el.dataset.category === category) {
+        el.style.display = '';
+      } else {
+        el.style.display = 'none';
+      }
+    });
+  });
+</script>

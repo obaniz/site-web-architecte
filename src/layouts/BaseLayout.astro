@@ -1,0 +1,137 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+
+interface BreadcrumbItem {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Si true, le <title> est exactement `title` (sans " | Caroline Guigné Architecte") */
+  titleOverride?: boolean;
+  /** Image Open Graph pour le partage social (chemin absolu depuis la racine) */
+  ogImage?: string;
+  /** Si true, injecte `<meta name="robots" content="noindex,nofollow">` */
+  noindex?: boolean;
+  /** Fil d'Ariane pour les données structurées */
+  breadcrumbs?: BreadcrumbItem[];
+}
+
+const {
+  title,
+  description = "Caroline Guigné, architecte HMONP à Bordeaux. Construction, extension, rénovation et aménagement intérieur pour particuliers et professionnels en Gironde.",
+  titleOverride = false,
+  ogImage = '/images/og-default.jpg',
+  noindex = false,
+  breadcrumbs = [],
+} = Astro.props;
+
+const pageTitle = titleOverride ? title : `${title} | Caroline Guigné Architecte`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogImageUrl = new URL(ogImage, Astro.site).href;
+
+const localBusinessJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Architect',
+  name: 'Caroline Guigné Architecte',
+  description: "Cabinet d'architecture à Bordeaux — construction, extension, rénovation, aménagement intérieur.",
+  url: 'https://www.carolineguignearchitecte.com',
+  logo: 'https://www.carolineguignearchitecte.com/logo.jpg',
+  image: 'https://www.carolineguignearchitecte.com/images/og-default.jpg',
+  telephone: '+33762004212',
+  email: 'info@carolineguignearchitecte.com',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '95 Rue du Palais Gallien',
+    postalCode: '33000',
+    addressLocality: 'Bordeaux',
+    addressRegion: 'Nouvelle-Aquitaine',
+    addressCountry: 'FR',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 44.846,
+    longitude: -0.5795,
+  },
+  areaServed: [
+    { '@type': 'City', name: 'Bordeaux' },
+    { '@type': 'AdministrativeArea', name: 'Gironde' },
+  ],
+  priceRange: '€€',
+  openingHours: 'Mo-Fr 09:00-18:00',
+  sameAs: [
+    'https://share.google/zKqXtLyY6dCU5qL2Y',
+    'https://www.instagram.com/caroline_guigne_architecte/',
+    'https://www.linkedin.com/in/caroline-guign%C3%A9-76b41726/',
+  ],
+};
+
+// Fil d'Ariane (Breadcrumb) JSON-LD
+const allCrumbs: BreadcrumbItem[] = [
+  { name: 'Accueil', href: '/' },
+  ...breadcrumbs,
+];
+const breadcrumbJsonLd = allCrumbs.length > 1 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: allCrumbs.map((crumb, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    name: crumb.name,
+    item: new URL(crumb.href, Astro.site).href,
+  })),
+} : null;
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    {noindex && <meta name="robots" content="noindex,nofollow" />}
+    <link rel="icon" href="/logo.jpg" />
+
+    <!-- SEO local et technique -->
+    <meta name="author" content="Caroline Guigné Architecte" />
+    <meta name="geo.region" content="FR-NAQ" />
+    <meta name="geo.placename" content="Bordeaux" />
+    <meta name="geo.position" content="44.846;-0.5795" />
+    <meta name="ICBM" content="44.846, -0.5795" />
+    <meta name="google" content="notranslate" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Caroline Guigné Architecte" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <title>{pageTitle}</title>
+
+    <!-- JSON-LD LocalBusiness -->
+    <script type="application/ld+json" set:html={JSON.stringify(localBusinessJsonLd)} />
+    <!-- JSON-LD Breadcrumb -->
+    {breadcrumbJsonLd && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />}
+  </head>
+  <body>
+    <Header />
+    <main style={`padding-top: var(--header-height);`}>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

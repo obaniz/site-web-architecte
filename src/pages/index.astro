@@ -1,0 +1,104 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import HeroCarousel from '../components/HeroCarousel.astro';
+
+const allProjects = await getCollection('projects');
+
+// Selection : projets featured, tries par featuredOrder (croissant) puis order
+const featuredProjects = allProjects
+  .filter((p) => p.data.featured)
+  .sort((a, b) => {
+    const aOrder = a.data.featuredOrder ?? Number.POSITIVE_INFINITY;
+    const bOrder = b.data.featuredOrder ?? Number.POSITIVE_INFINITY;
+    if (aOrder !== bOrder) return aOrder - bOrder;
+    return a.data.order - b.data.order;
+  });
+
+// Fallback : si aucun projet featured, prendre les 3 premiers par order
+const projectsToShow = featuredProjects.length > 0
+  ? featuredProjects
+  : allProjects.sort((a, b) => a.data.order - b.data.order).slice(0, 3);
+
+const slides = projectsToShow.map((p) => ({
+  image: p.data.heroImage,
+}));
+
+const heroImage = projectsToShow[0]?.data.heroImage ?? '/images/og-default.jpg';
+---
+
+<BaseLayout
+  title="Caroline Guigné — Architecte HMONP à Bordeaux"
+  description="Caroline Guigné, architecte HMONP inscrite à l'Ordre, vous accompagne à Bordeaux et en Gironde. Construction neuve, extension, rénovation et aménagement intérieur pour particuliers et professionnels."
+  titleOverride={true}
+  ogImage={heroImage}
+>
+  <HeroCarousel slides={slides} />
+
+  <section class="home-intro">
+    <div class="container">
+      <h1 class="text-display home-intro__title">Caroline Guigné Architecte à Bordeaux</h1>
+      <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-md);"></span>
+      <p class="text-body home-intro__lead">
+        Construction, extension, rénovation, aménagement intérieur : Caroline Guigné vous accompagne dans vos projets d'architecture à Bordeaux et en Gironde. De l'étude de faisabilité au suivi de chantier, chaque projet est mené avec écoute, exigence technique et souci du détail.
+      </p>
+      <p class="text-body home-intro__lead">
+        Habitat, médical, petite enfance, bureaux, commerces et établissements recevant du public (ERP) : une expertise large au service de vos idées.
+      </p>
+      <div class="home-intro__cta">
+        <a href="/realisations/" class="text-label home-intro__link">Voir les réalisations →</a>
+        <a href="/prestations/" class="text-label home-intro__link">Découvrir les prestations →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .home-intro {
+    padding: var(--space-xl) 0;
+  }
+
+  .home-intro__title {
+    font-size: 2.25rem;
+  }
+
+  .home-intro__lead {
+    max-width: 720px;
+    color: var(--on-surface-secondary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .home-intro__cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-lg);
+    margin-top: var(--space-md);
+  }
+
+  .home-intro__link {
+    color: var(--on-surface);
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 2px;
+    transition: color 0.2s;
+  }
+
+  .home-intro__link:hover {
+    color: var(--on-surface-secondary);
+  }
+
+  @media (max-width: 1023px) {
+    .home-intro__title {
+      font-size: 1.75rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .home-intro {
+      padding: var(--space-lg) 0;
+    }
+
+    .home-intro__title {
+      font-size: 1.4rem;
+    }
+  }
+</style>

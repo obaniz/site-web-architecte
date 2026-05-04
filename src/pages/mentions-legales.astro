@@ -1,0 +1,103 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mentions légales"
+  description="Mentions légales du site carolineguignearchitecte.com — éditeur, hébergement, propriété intellectuelle, données personnelles et cookies."
+  breadcrumbs={[{ name: 'Mentions légales', href: '/mentions-legales/' }]}
+  noindex={true}
+>
+  <div class="container">
+    <h1 class="text-display" style="padding-top: var(--space-lg);">Mentions légales</h1>
+    <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-lg);"></span>
+
+    <div class="legal-content text-body">
+      <section class="legal-section">
+        <h2 class="text-title">Éditeur du site</h2>
+        <p>
+          Caroline Guigné<br />
+          Architecte DE-HMONP, inscrite à l'Ordre des Architectes<br />
+          95 Rue du Palais Gallien, 33000 Bordeaux<br />
+          Téléphone : <a href="tel:+33762004212">07 62 00 42 12</a><br />
+          Email : <a href="mailto:info@carolineguignearchitecte.com">info@carolineguignearchitecte.com</a>
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Directrice de la publication</h2>
+        <p>Caroline Guigné</p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Hébergement</h2>
+        <p>
+          Le site est hébergé par Cloudflare, Inc.<br />
+          101 Townsend Street, San Francisco, CA 94107, États-Unis<br />
+          <a href="https://www.cloudflare.com" target="_blank" rel="noopener noreferrer">cloudflare.com</a>
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Propriété intellectuelle</h2>
+        <p>
+          L'ensemble des contenus (textes, images, photographies, logos, graphismes) présents sur ce site est la propriété exclusive de Caroline Guigné ou de ses ayants droit. Toute reproduction, représentation, modification ou exploitation, totale ou partielle, sans autorisation écrite préalable est interdite et constituerait une contrefaçon sanctionnée par les articles L.335-2 et suivants du Code de la propriété intellectuelle.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Données personnelles</h2>
+        <p>
+          Ce site ne collecte aucune donnée personnelle à des fins de profilage ni de publicité. Les informations transmises via l'email ou le téléphone sont utilisées uniquement pour répondre à vos demandes et ne sont jamais cédées à des tiers. Conformément à la loi "Informatique et Libertés" du 6 janvier 1978 modifiée et au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, d'effacement et d'opposition concernant vos données personnelles. Vous pouvez exercer ces droits en nous contactant à l'adresse indiquée ci-dessus.
+        </p>
+        <p>
+          Le formulaire de contact du site est traité par Web3Forms (Hetzner Online GmbH, Allemagne) qui transmet les messages par email. Une protection anti-spam hCaptcha (Intuition Machines Inc., États-Unis — encadrement par clauses contractuelles types) est utilisée. Les données saisies dans le formulaire (nom, email, téléphone optionnel, sujet, message) ne sont conservées par Web3Forms que le temps nécessaire à leur transmission (15 jours maximum) puis supprimées.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Cookies et mesure d'audience</h2>
+        <p>
+          Ce site n'utilise aucun outil de mesure d'audience. Aucun cookie, script de tracking ni collecte de données de navigation n'est mis en œuvre.
+        </p>
+        <p>
+          Aucun autre outil de tracking ou de publicité n'est déployé sur le site.
+        </p>
+      </section>
+
+      <section class="legal-section">
+        <h2 class="text-title">Crédits</h2>
+        <p>
+          Conception et développement : Olivier Banizette.<br />
+          Photographies : Caroline Guigné et ses collaborateurs.
+        </p>
+      </section>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .legal-content {
+    max-width: 720px;
+    color: var(--on-surface-secondary);
+    padding-bottom: var(--space-xl);
+  }
+
+  .legal-section {
+    padding: var(--space-md) 0;
+  }
+
+  .legal-section h2 {
+    color: var(--on-surface);
+    margin-bottom: var(--space-sm);
+  }
+
+  .legal-section p {
+    margin-bottom: var(--space-sm);
+  }
+
+  .legal-section a {
+    color: var(--on-surface);
+    border-bottom: 1px solid var(--accent);
+  }
+</style>

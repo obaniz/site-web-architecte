@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ProjectFilter from '../../components/ProjectFilter.astro';
+import ProjectCard from '../../components/ProjectCard.astro';
+import { getCollection } from 'astro:content';
+
+const projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout
+  title="Réalisations"
+  description="Découvrez les projets réalisés par Caroline Guigné Architecte à Bordeaux : maisons, extensions, rénovations, cabinets médicaux, commerces et ERP. Photos et détails de chaque réalisation."
+  breadcrumbs={[{ name: 'Réalisations', href: '/realisations/' }]}
+>
+  <div class="container">
+    <h1 class="text-display" style="padding-top: var(--space-lg);">Réalisations</h1>
+    <span class="accent-bar" style="margin: var(--space-sm) 0 0;"></span>
+
+    <ProjectFilter />
+
+    <div class="project-grid" id="project-grid">
+      {projects.map((project) => (
+        <div data-category={project.data.category} class="project-card-wrapper">
+          <ProjectCard
+            title={project.data.title}
+            slug={project.id}
+            heroImage={project.data.heroImage}
+            category={project.data.category}
+          />
+        </div>
+      ))}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+    padding: var(--space-md) 0 var(--space-xl);
+  }
+
+  .project-card-wrapper {
+    aspect-ratio: 4 / 3;
+  }
+
+  @media (max-width: 1023px) {
+    .project-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 767px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

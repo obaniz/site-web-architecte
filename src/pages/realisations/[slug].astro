@@ -1,0 +1,102 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ImageGallery from '../../components/ImageGallery.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+
+const categoryLabels: Record<string, string> = {
+  habitat: 'Habitat',
+  medical: 'Médical',
+  'petite-enfance': 'Petite enfance',
+  bureaux: 'Bureaux',
+  commerces: 'Commerces',
+  erp: 'ERP',
+};
+---
+
+<BaseLayout
+  title={project.data.title}
+  description={project.data.description}
+  breadcrumbs={[
+    { name: 'Réalisations', href: '/realisations/' },
+    { name: project.data.title, href: `/realisations/${project.id}/` },
+  ]}
+>
+  <div class="project-hero">
+    <img src={project.data.heroImage} alt={project.data.title} class="project-hero__image" />
+  </div>
+
+  <div class="container">
+    <div class="project-meta">
+      <span class="text-label" style="color: var(--on-surface-tertiary);">
+        {categoryLabels[project.data.category]} — {project.data.location}
+      </span>
+      <h1 class="text-display" style="margin-top: var(--space-xs);">{project.data.title}</h1>
+      <span class="accent-bar" style="margin: var(--space-sm) 0;"></span>
+    </div>
+
+    <div class="project-content text-body">
+      <Content />
+    </div>
+
+    {project.data.images && (
+      <ImageGallery images={project.data.images} alt={project.data.title} />
+    )}
+
+    <a href="/realisations/" class="back-link text-label">
+      ← Retour aux réalisations
+    </a>
+  </div>
+</BaseLayout>
+
+<style>
+  .project-hero {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    background: var(--surface-container);
+  }
+
+  .project-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .project-meta {
+    padding: var(--space-lg) 0 var(--space-md);
+  }
+
+  .project-content {
+    max-width: 720px;
+    color: var(--on-surface-secondary);
+    padding-bottom: var(--space-md);
+  }
+
+  .back-link {
+    display: inline-block;
+    color: var(--on-surface-tertiary);
+    padding: var(--space-md) 0 var(--space-xl);
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: var(--on-surface);
+  }
+
+  @media (max-width: 767px) {
+    .project-hero {
+      height: 40vh;
+    }
+  }
+</style>

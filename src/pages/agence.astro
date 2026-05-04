@@ -1,0 +1,312 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="L'agence"
+  description="Découvrez l'agence Caroline Guigné Architecte à Bordeaux : parcours, valeurs, cabinet partagé au Collectif 95 rue du Palais Gallien. 18 ans d'expérience en architecture résidentielle et professionnelle."
+  breadcrumbs={[{ name: "L'agence", href: '/agence/' }]}
+>
+  <div class="agence-hero">
+    <img src="/images/agence/vitrine.jpg" alt="Cabinet Caroline Guigné Architecte - Collectif 95" class="agence-hero__image" />
+  </div>
+
+  <div class="container">
+    <!-- Intro + portrait -->
+    <section class="agence-section agence-intro">
+      <h1 class="text-display">Présentation de l'agence</h1>
+      <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-md);"></span>
+      <img src="/images/agence/portrait.jpg" alt="Caroline Guigné" class="agence-portrait-float" />
+      <p class="text-body">
+        Diplômée en 2008 à l'ENSA Nantes, Caroline Guigné est dirigeante de Caroline Guigné Architecte. Forte de 18 années d'expérience en agences à Nantes, à Montréal puis à Paris, Caroline Guigné exerce comme architecte libéral depuis 2018, autant pour le résidentiel que pour le professionnel.
+      </p>
+      <p class="text-body">
+        Le spectre de son exercice est large : extensions et rénovations d'habitat individuels (appartement ou maison), création d'un lieu de travail ou d'un établissement ERP, etc. Les interventions peuvent s'étendre dans le département de la Gironde et plus largement dans le Sud Ouest.
+      </p>
+      <div class="agence-intro__clear"></div>
+    </section>
+
+    <!-- Valeurs -->
+    <section class="agence-section agence-block">
+      <h2 class="text-display agence-block__title">Valeurs</h2>
+      <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-md);"></span>
+      <p class="text-body">
+        Un espace s'envisage à partir de projections multiples. Il y a l'idée que l'on s'en fait puis notre rôle d'architecte est d'en être le traducteur et d'aller au-delà, afin de proposer un projet sur mesure et viable. Le plus important est de créer un lieu de vie agréable où tous les usages et fonctionnalités prennent naturellement leur place.
+      </p>
+      <p class="text-body">
+        Nous nous efforçons de vous accompagner au mieux dans votre projet de construction ou de rénovation, qu'il s'agisse du projet de votre vie, sur votre maison ou dans le cadre professionnel. De la conception à la livraison de l'ouvrage, notre préoccupation est avant tout votre satisfaction à travers la qualité des espaces et leur pérennité.
+      </p>
+      <p class="text-body">
+        La préoccupation environnementale est au cœur de la pensée architecturale et l'utilisation de matériaux écologiques sera privilégiée autant que l'économie de projet le permet. Il est évident aujourd'hui que notre devoir d'architecte est de proposer des solutions environnementales responsables pour faire baisser les consommations d'énergie du bâtiment d'une part (et votre coût d'entretien par la même occasion !), ainsi que d'augmenter votre confort en hiver comme en été.
+      </p>
+    </section>
+
+    <!-- Le cabinet -->
+    <section class="agence-section agence-block">
+      <h2 class="text-display agence-block__title">Le cabinet</h2>
+      <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-md);"></span>
+      <p class="text-body">
+        Le cabinet est situé au 95 rue du Palais Gallien, à Bordeaux. Cet espace est partagé avec 10 autres architectes en libéral. Nous trouvons notre force dans l'échange quotidien, nécessaire à cette profession généraliste qui fait face à de multiples problématiques inédites. Venez nous rencontrer, nous sommes faciles à trouver !
+      </p>
+    </section>
+
+    <!-- Le saviez-vous ? -->
+    <section class="agence-why-section">
+      <div class="agence-why__block">
+        <span class="agence-tag">Le saviez-vous ?</span>
+        <h2 class="text-display agence-why__title">Pourquoi faire appel à un architecte ?</h2>
+        <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-md);"></span>
+        <p class="text-body agence-why__lede">
+          Le recours à l'architecte est obligatoire au-delà de 150 m<sup>2</sup> de surface plancher. Mais son rôle dépasse largement le dépôt de permis — un accompagnement complet qui, souvent, vous fait économiser plus qu'il ne coûte.
+        </p>
+        <div class="agence-why__grid">
+          <div class="agence-why__item">
+            <div class="agence-why__num" aria-hidden="true">01</div>
+            <h3 class="agence-why__heading">Économiser</h3>
+            <p class="agence-why__desc">Devis négociés, pièges évités, budget tenu jusqu'à la réception.</p>
+          </div>
+          <div class="agence-why__item">
+            <div class="agence-why__num" aria-hidden="true">02</div>
+            <h3 class="agence-why__heading">Valoriser</h3>
+            <p class="agence-why__desc">Votre bien prend de la plus-value à la revente.</p>
+          </div>
+          <div class="agence-why__item">
+            <div class="agence-why__num" aria-hidden="true">03</div>
+            <h3 class="agence-why__heading">Être serein</h3>
+            <p class="agence-why__desc">Mairie, artisans, imprévus : nous portons la complexité.</p>
+          </div>
+          <div class="agence-why__item">
+            <div class="agence-why__num" aria-hidden="true">04</div>
+            <h3 class="agence-why__heading">S'appuyer</h3>
+            <p class="agence-why__desc">Réseau d'artisans fiables, réactifs, habitués à nos exigences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="agence-cta">
+    <div class="container agence-cta__inner">
+      <h2 class="text-display agence-cta__title">Un projet en tête ?</h2>
+      <p class="agence-cta__subtitle">Parlons-en autour d'un premier échange, sans engagement.</p>
+      <a href="/contact/" class="agence-cta__btn">Nous contacter</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .agence-hero {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+    background: var(--surface-container);
+  }
+
+  .agence-hero__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .agence-section {
+    padding: var(--space-xl) 0;
+  }
+
+  .agence-intro {
+    overflow: hidden;
+  }
+
+  .agence-portrait-float {
+    float: left;
+    width: 220px;
+    height: auto;
+    margin: var(--space-xs) var(--space-lg) var(--space-sm) 0;
+    background: var(--surface-container);
+  }
+
+  .agence-intro__clear {
+    clear: both;
+  }
+
+  .agence-intro .text-body,
+  .agence-block .text-body {
+    color: var(--on-surface-secondary);
+    margin-bottom: var(--space-sm);
+  }
+
+  .agence-intro .text-body:last-of-type,
+  .agence-block .text-body:last-child {
+    margin-bottom: 0;
+  }
+
+  .agence-block {
+    background: var(--surface-container);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-md);
+  }
+
+  .agence-block__title {
+    font-size: 2rem;
+  }
+
+  /* Bloc « Le saviez-vous ? » */
+  .agence-why-section {
+    padding: 0 0 var(--space-xl);
+  }
+
+  .agence-tag {
+    display: block;
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--on-surface-tertiary);
+    margin-bottom: var(--space-xs);
+  }
+
+  .agence-why__title {
+    font-size: 2rem;
+  }
+
+  .agence-why__block {
+    background: var(--surface-container);
+    padding: var(--space-lg);
+  }
+
+  .agence-why__lede {
+    color: var(--on-surface);
+    margin-bottom: var(--space-md);
+  }
+
+  .agence-why__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+  }
+
+  .agence-why__item {
+    padding: var(--space-sm) 0;
+  }
+
+  .agence-why__num {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 1;
+    color: var(--on-surface);
+    margin-bottom: var(--space-xs);
+  }
+
+  .agence-why__heading {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: var(--on-surface);
+    margin-bottom: var(--space-xs);
+  }
+
+  .agence-why__desc {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: var(--on-surface-secondary);
+    line-height: 1.55;
+  }
+
+  .agence-cta {
+    background: var(--surface-dark);
+    padding: var(--space-xl) 0;
+    text-align: center;
+  }
+
+  .agence-cta__title {
+    color: var(--surface);
+    font-size: 2rem;
+    margin-bottom: var(--space-xs);
+  }
+
+  .agence-cta__subtitle {
+    font-family: var(--font-body);
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--on-dark);
+    margin-bottom: var(--space-md);
+  }
+
+  .agence-cta__btn {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: var(--text-label);
+    font-weight: 500;
+    letter-spacing: var(--tracking-wide);
+    text-transform: uppercase;
+    color: var(--on-surface);
+    background: var(--accent);
+    padding: var(--space-sm) var(--space-lg);
+    transition: opacity 0.2s;
+  }
+
+  .agence-cta__btn:hover,
+  .agence-cta__btn:focus-visible {
+    opacity: 0.85;
+  }
+
+  .agence-cta__btn:focus-visible {
+    outline: 2px solid var(--surface);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 1023px) {
+    .agence-block__title,
+    .agence-why__title {
+      font-size: 1.6rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .agence-section {
+      padding: var(--space-lg) 0;
+    }
+
+    .agence-why-section {
+      padding: 0 0 var(--space-lg);
+    }
+
+    .agence-portrait-float {
+      width: 140px;
+      margin: 0 var(--space-sm) var(--space-xs) 0;
+    }
+
+    .agence-block {
+      padding: var(--space-md);
+    }
+
+    .agence-block__title,
+    .agence-why__title {
+      font-size: 1.4rem;
+    }
+
+    .agence-why__block {
+      padding: var(--space-md);
+    }
+
+    .agence-why__grid {
+      grid-template-columns: 1fr;
+    }
+
+    .agence-why__num {
+      font-size: 1.5rem;
+    }
+
+    .agence-cta {
+      padding: var(--space-lg) 0;
+    }
+
+    .agence-cta__title {
+      font-size: 1.4rem;
+    }
+  }
+</style>
