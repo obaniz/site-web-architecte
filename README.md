@@ -7,5 +7,5 @@ Site vitrine du cabinet d'architecture de Caroline Guigné, architecte DE-HMONP 
 ## Stack
 
 - [Astro](https://astro.build) — site statique
-- [Cloudflare Pages](https://pages.cloudflare.com) — hébergement
+- [Netlify](https://www.netlify.com) — hébergement
 - [Pages CMS](https://pagescms.org) — gestion de contenu
