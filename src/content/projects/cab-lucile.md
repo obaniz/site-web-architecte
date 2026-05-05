@@ -6,9 +6,8 @@ location: Libourne (33)
 description: "Rénovation et extension d'un cabinet dentaire "
 heroImage: /images/projects/cab-lucile-hero.jpg
 images:
-  - /images/projects/cabinet-dentaire 2 360.jpg
-  - /images/projects/cabinet-dentaire 3 128.jpg
-  - /images/projects/coupe.jpg
+  - /images/projects/duo cab.jpg
+  - /images/projects/coupe-1.jpg
 order: 3
 featured: true
 featuredOrder: 2
