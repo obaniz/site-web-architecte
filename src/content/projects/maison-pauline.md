@@ -7,6 +7,7 @@ description: Surélévation et rénovation globale d'une maison de ville
 heroImage: /images/projects/surrelev (6).jpg
 images:
   - /images/projects/1.jpg
+  - /images/projects/duo2.jpg
   - /images/projects/6.JPG (2).jpg
   - /images/projects/2.JPG.jpg
   - /images/projects/duo (6).jpg
