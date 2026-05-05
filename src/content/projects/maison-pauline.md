@@ -10,6 +10,9 @@ images:
   - /images/projects/1.jpg
   - /images/projects/6.JPG (2).jpg
   - /images/projects/2.JPG.jpg
+  - /images/projects/5.JPG.jpg
+  - /images/projects/3.jpg
+  - /images/projects/4.jpg
 order: 5
 featured: false
 ---
