@@ -10,7 +10,7 @@ images:
   - /images/projects/cour3.jpg
   - /images/projects/axo (3).jpg
   - /images/projects/salon 2.jpg
-  - /images/projects/salon1.jpg
+  - /images/projects/salon1 copie.jpg
 order: 7
 featured: false
 ---
