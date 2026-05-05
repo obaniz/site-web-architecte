@@ -14,4 +14,4 @@ images:
 order: 7
 featured: false
 ---
-Extension et rénovation globale d'une maison pour la création d'un habitat inclusif pour 3 personnes. Etude esquisse et permis.
+Extension et rénovation globale d'une maison pour la création d'un habitat inclusif pour 3 personnes. Conception conforme aux normes ERP pour l'inclusion de tous. Etude esquisse et permis.
