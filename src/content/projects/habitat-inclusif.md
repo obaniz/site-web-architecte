@@ -7,7 +7,7 @@ description: Extension et rénovation globale pour la création d'un habitat
   inclusif pour 3 personnes.
 heroImage: /images/projects/rue (1).jpg
 images:
-  - /images/projects/cour3.jpg
+  - /images/projects/cour3 (2).jpg
   - /images/projects/axo (3).jpg
   - /images/projects/salon 2.jpg
   - /images/projects/salon1 copie.jpg
