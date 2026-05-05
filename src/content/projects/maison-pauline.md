@@ -16,4 +16,4 @@ images:
 order: 5
 featured: false
 ---
-Une maison de ville refait peau neuve grâce à la création d'une surélévation et de sa rénovation globale.
+Une maison de ville refait peau neuve grâce à la création d'une surélévation et de sa rénovation globale. Esquisse / Permis / DCE / Suivi de chantier
