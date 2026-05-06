@@ -11,4 +11,4 @@ images:
 order: 8
 featured: false
 ---
-Transformation de deux logements en duplex adapté à un couple sénior.
+Transformation de deux logements en duplex adapté à un couple sénior. Etudes en cours: esquisse / DCE / suivi de chantier.
