@@ -5,9 +5,9 @@ category: medical
 location: Evry-courcouronnes (91)
 description: Aménagement d'un hôpital de jour, d'un CATTP et d'un centre
   médico-psychologique
-heroImage: /images/projects/hdj titré réduit.jpg
+heroImage: /images/projects/hopital-de-jour-hero.jpg
 images:
-  - /images/projects/hdj titré réduit-1.jpg
+  - /images/projects/hopital-de-jour-vue.jpg
 order: 19
 featured: false
 ---

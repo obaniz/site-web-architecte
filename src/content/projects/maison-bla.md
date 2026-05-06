@@ -5,10 +5,10 @@ category: habitat
 location: Blanquefort (33)
 description: Extension sur 2 niveaux d'une maison pour la création de deux
   chambres d'enfants.
-heroImage: /images/projects/rdc H (1).jpg
+heroImage: /images/projects/maison-bla-hero.jpg
 images:
-  - /images/projects/r+1 (1).jpg
-  - /images/projects/coupe-2.jpg
+  - /images/projects/maison-bla-etage.jpg
+  - /images/projects/maison-bla-coupe.jpg
 order: 7
 featured: false
 ---

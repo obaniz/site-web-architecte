@@ -5,12 +5,12 @@ category: habitat
 location: Bergerac (24)
 description: Extension et rénovation globale pour la création d'un habitat
   inclusif pour 3 personnes.
-heroImage: /images/projects/rue (1).jpg
+heroImage: /images/projects/habitat-inclusif-hero.jpg
 images:
-  - /images/projects/cour3 (2).jpg
-  - /images/projects/axo (3).jpg
-  - /images/projects/salon 2.jpg
-  - /images/projects/salon1 copie.jpg
+  - /images/projects/habitat-inclusif-cour.jpg
+  - /images/projects/habitat-inclusif-axo.jpg
+  - /images/projects/habitat-inclusif-salon.jpg
+  - /images/projects/habitat-inclusif-sejour.jpg
 order: 7
 featured: false
 ---

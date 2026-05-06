@@ -4,10 +4,10 @@ slug: guiti
 category: habitat
 location: Le Bouscat (33)
 description: "Extension d'une maison individuelle au Bouscat "
-heroImage: /images/projects/GUITI.jpg
+heroImage: /images/projects/guiti-hero.jpg
 images:
-  - /images/projects/Archi-29 (1)-1.jpg
-  - /images/projects/Archi-2 (1)-1.jpg
+  - /images/projects/guiti-plan-1.jpg
+  - /images/projects/guiti-plan-2.jpg
 order: 3
 featured: true
 featuredOrder: 3

@@ -4,11 +4,11 @@ slug: laboratoire-analyses
 category: medical
 location: Provence-Alpes-Côte d'Azur
 description: Aménagement de 8 laboratoires d'analyse pour Kantys Bio et Ripoll
-heroImage: /images/projects/ripoll enseigne aix (2).jpg
+heroImage: /images/projects/laboratoire-analyses-hero.jpg
 images:
-  - /images/projects/facade (1).jpg
-  - /images/projects/LAB NICE (2).jpg
-  - /images/projects/plannb (3).jpg
+  - /images/projects/laboratoire-analyses-facade.jpg
+  - /images/projects/laboratoire-analyses-nice.jpg
+  - /images/projects/laboratoire-analyses-plan.jpg
 order: 16
 featured: false
 ---

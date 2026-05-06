@@ -5,10 +5,10 @@ category: petite-enfance
 location: Arveyres (33)
 description: Transformation d'un pavillon en micro-crèche accueillant 12 enfants
   pour Les Chérubins
-heroImage: /images/projects/dortoir (1).jpg
+heroImage: /images/projects/micro-creche-arveyres-hero.jpg
 images:
-  - /images/projects/entree (1).jpg
-  - /images/projects/éveil (1).jpg
+  - /images/projects/micro-creche-arveyres-entree.jpg
+  - /images/projects/micro-creche-arveyres-eveil.jpg
 order: 13
 featured: false
 ---

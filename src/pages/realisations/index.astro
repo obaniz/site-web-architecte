@@ -37,12 +37,13 @@ const projects = (await getCollection('projects')).sort((a, b) => a.data.order -
   .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4px;
+    gap: var(--space-md);
+    align-items: center;
     padding: var(--space-md) 0 var(--space-xl);
   }
 
   .project-card-wrapper {
-    aspect-ratio: 4 / 3;
+    aspect-ratio: auto;
   }
 
   @media (max-width: 1023px) {
@@ -54,6 +55,11 @@ const projects = (await getCollection('projects')).sort((a, b) => a.data.order -
   @media (max-width: 767px) {
     .project-grid {
       grid-template-columns: 1fr;
+      align-items: stretch;
+    }
+
+    .project-card-wrapper {
+      aspect-ratio: auto;
     }
   }
 </style>

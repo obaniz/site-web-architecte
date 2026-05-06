@@ -4,10 +4,10 @@ slug: duplex
 category: habitat
 location: Bordeaux
 description: Transformation de deux logements en duplex adapté à un couple sénior.
-heroImage: /images/projects/cuisine.png
+heroImage: /images/projects/duplex-hero.png
 images:
-  - /images/projects/salon2 (2).jpg
-  - /images/projects/salon3.jpg
+  - /images/projects/duplex-salon.jpg
+  - /images/projects/duplex-sejour.jpg
 order: 8
 featured: false
 ---

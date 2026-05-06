@@ -5,11 +5,11 @@ category: petite-enfance
 location: Gironde
 description: Transformation de pavillons en micro-crèches accueillant 14 enfants
   à Ambarès, Izon et Mérignac (33)
-heroImage: /images/projects/ambares (1).jpg
+heroImage: /images/projects/creches-calines-hero.jpg
 images:
-  - /images/projects/ambares2 (2).jpg
-  - /images/projects/izon (2).jpg
-  - /images/projects/merignac (2).jpg
+  - /images/projects/creches-calines-ambares.jpg
+  - /images/projects/creches-calines-izon.jpg
+  - /images/projects/creches-calines-merignac.jpg
 order: 15
 featured: false
 ---

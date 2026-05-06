@@ -4,13 +4,13 @@ slug: maison-pauline
 category: habitat
 location: Bordeaux centre
 description: Surélévation et rénovation globale d'une maison de ville. Echoppe en pierre.
-heroImage: /images/projects/surrelev (6).jpg
+heroImage: /images/projects/maison-pauline-hero.jpg
 images:
-  - /images/projects/1.jpg
-  - /images/projects/duo2.jpg
-  - /images/projects/6.JPG (2).jpg
-  - /images/projects/2.JPG.jpg
-  - /images/projects/duo (6).jpg
+  - /images/projects/maison-pauline-facade.jpg
+  - /images/projects/maison-pauline-duo.jpg
+  - /images/projects/maison-pauline-interieur.jpg
+  - /images/projects/maison-pauline-salon.jpg
+  - /images/projects/maison-pauline-ensemble.jpg
 order: 5
 featured: false
 ---
