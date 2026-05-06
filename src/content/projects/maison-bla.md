@@ -12,4 +12,4 @@ images:
 order: 7
 featured: false
 ---
-Extension sur 2 niveaux d'une maison pour la création de deux chambres d'enfants. Etudes Esquisse / DCE.
+Extension sur 2 niveaux d'une maison pour la création de deux chambres d'enfants. Etudes Esquisse / Permis / DCE.
