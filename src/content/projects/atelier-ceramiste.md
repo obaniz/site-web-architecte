@@ -8,7 +8,7 @@ heroImage: /images/projects/exi.jpg
 images:
   - /images/projects/facade.jpg
   - /images/projects/pro (1).jpg
-order: 12
+order: 13
 featured: false
 ---
 Création de devanture rue Notre-Dame. Esquisse / permis et validation auprès de l'Architecte des Bâtiments de France.
