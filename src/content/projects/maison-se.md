@@ -8,7 +8,7 @@ heroImage: /images/projects/vue ext (2).jpg
 images:
   - /images/projects/axo (1).jpg
   - /images/projects/elevv (1).jpg
-order: 10
+order: 9
 featured: false
 ---
 Extension d'une maison individuelle à Pessac. La maison existante semble "s'appuyer" sur la nouvelle
