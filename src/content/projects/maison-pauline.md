@@ -9,8 +9,8 @@ images:
   - /images/projects/maison-pauline-facade.jpg
   - /images/projects/maison-pauline-duo.jpg
   - /images/projects/maison-pauline-interieur.jpg
-  - /images/projects/maison-pauline-salon.jpg
   - /images/projects/maison-pauline-ensemble.jpg
+  - /images/projects/2.JPG.jpg
 order: 5
 featured: false
 ---
