@@ -5,9 +5,9 @@ category: [medical]
 location: Corbeil-Essonne (91)
 description: "Restructuration de services divers: urgences pédiatriques,
   psychiatrie, morgue, archives, amphithéâtre, EHPAD."
-heroImage: /images/projects/hsf réduit.jpg
+heroImage: /images/projects/hopital-sud-francilien-hero.jpg
 images:
-  - /images/projects/hsf réduit-1.jpg
+  - /images/projects/hopital-sud-francilien-vue.jpg
 order: 18
 featured: false
 ---
