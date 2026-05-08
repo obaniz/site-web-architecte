@@ -64,7 +64,7 @@ content:
           multiple: true
 
       - name: order
-        label: Ordre d'affichage dans les Realisations (0 = premier)
+        label: Ordre affichage
         type: number
         default: 0
 
