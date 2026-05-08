@@ -8,6 +8,7 @@ heroImage: /images/projects/duplex-hero.png
 images:
   - /images/projects/duplex-salon.jpg
   - /images/projects/duplex-sejour.jpg
+listed: true
 order: 8
 featured: false
 ---

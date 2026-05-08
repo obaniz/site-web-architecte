@@ -10,6 +10,7 @@ images:
   - /images/projects/creches-calines-ambares.jpg
   - /images/projects/creches-calines-izon.jpg
   - /images/projects/creches-calines-merignac.jpg
+listed: true
 order: 15
 featured: false
 ---

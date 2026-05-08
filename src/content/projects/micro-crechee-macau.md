@@ -9,6 +9,7 @@ heroImage: /images/projects/micro-creche-macau-hero.jpg
 images:
   - /images/projects/micro-creche-macau-jardin.jpg
   - /images/projects/micro-creche-macau-change.jpg
+listed: true
 order: 14
 featured: false
 ---

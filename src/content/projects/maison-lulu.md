@@ -7,6 +7,7 @@ description: Rénovation lourde d'une maison centenaire à Libourne
 heroImage: /images/projects/maison-lulu-hero.jpg
 images:
   - /images/projects/maison-lulu-vue.jpg
+listed: true
 order: 1
 featured: true
 featuredOrder: 1

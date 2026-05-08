@@ -9,6 +9,7 @@ heroImage: /images/projects/maison-bla-hero.jpg
 images:
   - /images/projects/maison-bla-etage.jpg
   - /images/projects/maison-bla-coupe.jpg
+listed: true
 order: 7
 featured: false
 ---

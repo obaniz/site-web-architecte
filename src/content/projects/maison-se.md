@@ -8,6 +8,7 @@ heroImage: /images/projects/maison-se-hero.jpg
 images:
   - /images/projects/maison-se-axo.jpg
   - /images/projects/maison-se-elevation.jpg
+listed: true
 order: 9
 featured: false
 ---

@@ -8,6 +8,7 @@ description: Aménagement d'un hôpital de jour, d'un CATTP et d'un centre
 heroImage: /images/projects/hopital-de-jour-hero.jpg
 images:
   - /images/projects/hopital-de-jour-vue.jpg
+listed: true
 order: 19
 featured: false
 ---

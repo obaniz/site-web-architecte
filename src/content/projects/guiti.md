@@ -8,6 +8,7 @@ heroImage: /images/projects/guiti-hero.jpg
 images:
   - /images/projects/guiti-plan-1.jpg
   - /images/projects/guiti-plan-2.jpg
+listed: true
 order: 3
 featured: true
 featuredOrder: 3

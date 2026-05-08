@@ -7,6 +7,7 @@ description: Aménagement d'un hôpital de jour pour la Fondation John Bost
 heroImage: /images/projects/fondation-john-bost-hero.jpg
 images:
   - /images/projects/fondation-john-bost-axo.jpg
+listed: true
 order: 6
 featured: false
 ---

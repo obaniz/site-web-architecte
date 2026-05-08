@@ -8,6 +8,7 @@ description: "Restructuration de services divers: urgences pédiatriques,
 heroImage: /images/projects/hopital-sud-francilien-hero.jpg
 images:
   - /images/projects/hopital-sud-francilien-vue.jpg
+listed: true
 order: 18
 featured: false
 ---

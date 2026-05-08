@@ -9,7 +9,7 @@ content:
     path: src/content/projects
     filename: "{fields.slug}.md"
     view:
-      fields: [title, category, location, featured]
+      fields: [title, category, location, order, listed, featured]
       primary: title
     fields:
       - name: title
@@ -68,8 +68,13 @@ content:
         type: number
         default: 0
 
+      - name: listed
+        label: Afficher liste projet
+        type: boolean
+        default: true
+
       - name: featured
-        label: Afficher ce projet dans le carrousel de la page d'accueil
+        label: Afficher page d'accueil
         type: boolean
         default: false
 

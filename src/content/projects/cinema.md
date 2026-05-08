@@ -7,6 +7,7 @@ description: Aménagement de 5 salles de cinéma 4DX© pour Gaumont Pathé.
 heroImage: /images/projects/cinema-hero.jpg
 images:
   - /images/projects/cinema-vue.jpg
+listed: true
 order: 17
 featured: false
 ---

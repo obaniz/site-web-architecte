@@ -8,6 +8,7 @@ description: "Extension d'un lycée professionnel pour la création de l'accueil
 heroImage: /images/projects/lycee-professionnel-hero.jpg
 images:
   - /images/projects/lycee-professionnel-vue.jpg
+listed: true
 order: 17
 featured: false
 ---

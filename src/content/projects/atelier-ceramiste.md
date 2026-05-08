@@ -8,6 +8,7 @@ heroImage: /images/projects/atelier-ceramiste-hero.jpg
 images:
   - /images/projects/atelier-ceramiste-facade.jpg
   - /images/projects/atelier-ceramiste-interieur.jpg
+listed: true
 order: 13
 featured: false
 ---

@@ -11,6 +11,7 @@ images:
   - /images/projects/maison-pauline-interieur.jpg
   - /images/projects/maison-pauline-ensemble.jpg
   - /images/projects/maison-pauline-salon.jpg
+listed: true
 order: 5
 featured: false
 ---

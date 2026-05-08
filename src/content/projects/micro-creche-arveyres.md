@@ -9,6 +9,7 @@ heroImage: /images/projects/micro-creche-arveyres-hero.jpg
 images:
   - /images/projects/micro-creche-arveyres-entree.jpg
   - /images/projects/micro-creche-arveyres-eveil.jpg
+listed: true
 order: 13
 featured: false
 ---

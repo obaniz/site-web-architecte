@@ -8,6 +8,7 @@ heroImage: /images/projects/cab-lucile-hero.jpg
 images:
   - /images/projects/cab-lucile-duo.jpg
   - /images/projects/cab-lucile-coupe.jpg
+listed: true
 order: 3
 featured: true
 featuredOrder: 2

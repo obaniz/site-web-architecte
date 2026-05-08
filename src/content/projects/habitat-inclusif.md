@@ -11,6 +11,7 @@ images:
   - /images/projects/habitat-inclusif-axo.jpg
   - /images/projects/habitat-inclusif-salon.jpg
   - /images/projects/habitat-inclusif-sejour.jpg
+listed: true
 order: 7
 featured: false
 ---

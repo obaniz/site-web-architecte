@@ -9,6 +9,7 @@ images:
   - /images/projects/laboratoire-analyses-facade.jpg
   - /images/projects/laboratoire-analyses-nice.jpg
   - /images/projects/laboratoire-analyses-plan.jpg
+listed: true
 order: 16
 featured: false
 ---
