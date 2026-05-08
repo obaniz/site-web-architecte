@@ -34,12 +34,12 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
-    align-items: stretch;
     padding: var(--space-md) 0 var(--space-xl);
   }
 
   .project-card-wrapper {
     aspect-ratio: 16 / 9;
+    overflow: hidden;
   }
 
   @media (max-width: 1023px) {
@@ -51,11 +51,6 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
   @media (max-width: 767px) {
     .project-grid {
       grid-template-columns: 1fr;
-      align-items: stretch;
-    }
-
-    .project-card-wrapper {
-      aspect-ratio: 16 / 9;
     }
   }
 </style>
