@@ -9,7 +9,7 @@ const { title, slug, heroImage } = Astro.props;
 ---
 
 <a href={`/realisations/${slug}/`} class="project-card">
-  <img src={heroImage} alt={title} class="project-card__image" loading="lazy" />
+  <img src={heroImage} alt={title} class="project-card__image" width="640" height="360" loading="lazy" />
   <div class="project-card__overlay">
     <h3 class="project-card__title">{title}</h3>
   </div>

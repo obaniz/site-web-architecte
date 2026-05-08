@@ -13,7 +13,7 @@ const { slides } = Astro.props;
 <div class="carousel" id="hero-carousel">
   {slides.map((slide, i) => (
     <div class:list={['carousel__slide', { 'carousel__slide--active': i === 0 }]} data-index={i}>
-      <img src={slide.image} alt="" class="carousel__image" loading={i === 0 ? 'eager' : 'lazy'} />
+      <img src={slide.image} alt="" class="carousel__image" width="1920" height="1080" loading={i === 0 ? 'eager' : 'lazy'} />
       <div class="carousel__overlay" />
     </div>
   ))}

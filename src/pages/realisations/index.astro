@@ -34,7 +34,7 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--space-md);
-    align-items: center;
+    align-items: stretch;
     padding: var(--space-md) 0 var(--space-xl);
   }
 
