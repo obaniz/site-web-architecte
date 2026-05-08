@@ -23,31 +23,32 @@ const { title, description, image, imageAlt, reversed = false } = Astro.props;
 
 <style>
   .prestation {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: var(--space-lg);
-    align-items: center;
   }
 
-  .prestation--reversed {
-    flex-direction: row-reverse;
+  .prestation--reversed .prestation__image-wrapper {
+    order: 2;
+  }
+
+  .prestation--reversed .prestation__text {
+    order: 1;
   }
 
   .prestation__image-wrapper {
-    flex: 1;
     overflow: hidden;
     background: var(--surface-container);
   }
 
   .prestation__image {
     width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3;
+    height: 100%;
     object-fit: cover;
+    aspect-ratio: 4 / 3;
   }
 
   .prestation__text {
-    flex: 1;
-    align-self: stretch;
     background: var(--surface-container);
     padding: var(--space-md);
     display: flex;
@@ -56,10 +57,17 @@ const { title, description, image, imageAlt, reversed = false } = Astro.props;
   }
 
   @media (max-width: 767px) {
-    .prestation,
-    .prestation--reversed {
-      flex-direction: column;
+    .prestation {
+      grid-template-columns: 1fr;
       gap: 0;
+    }
+
+    .prestation--reversed .prestation__image-wrapper {
+      order: unset;
+    }
+
+    .prestation--reversed .prestation__text {
+      order: unset;
     }
 
     .prestation__text {

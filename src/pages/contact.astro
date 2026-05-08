@@ -8,9 +8,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   breadcrumbs={[{ name: 'Contact', href: '/contact/' }]}
 >
   <div class="container">
-    <h1 class="text-display" style="padding-top: var(--space-lg);">Contact</h1>
-    <span class="accent-bar" style="margin: var(--space-sm) 0 var(--space-lg);"></span>
-
     <div class="contact-grid">
       <div class="contact-form-column">
         <h2 class="text-title contact-form__heading">Envoyer un message</h2>
@@ -146,6 +143,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
+    padding-top: var(--space-lg);
     padding-bottom: var(--space-xl);
   }
 

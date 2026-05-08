@@ -8,17 +8,12 @@ const socialLinks = [
 
 <footer class="footer">
   <div class="footer__inner container">
-    <div class="footer__left">
-      <span class="footer__logo">CG</span>
+    <div class="footer__top">
       <p class="footer__address">
-        95 Rue du Palais Gallien<br />
+        Caroline Guigné<br />
+        95 rue du Palais Gallien<br />
         33000 Bordeaux
       </p>
-      <p class="footer__legal">Diplômée d'État HMONP en architecture, inscrite à l'Ordre</p>
-      <a href="/mentions-legales/" class="footer__legal-link">Mentions légales</a>
-    </div>
-
-    <div class="footer__right">
       <nav class="footer__socials">
         {socialLinks.map((link) => (
           <a href={link.href} class="footer__social-link" target="_blank" rel="noopener noreferrer">
@@ -26,6 +21,14 @@ const socialLinks = [
           </a>
         ))}
       </nav>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__bottom-left">
+        <p class="footer__legal">Diplômée d'État HMONP en architecture, inscrite à l'Ordre</p>
+        <img src="/images/logo_ordre_architectes.jpg" alt="Logo de l'Ordre des Architectes" class="footer__ordre-logo" />
+      </div>
+      <a href="/mentions-legales/" class="footer__legal-link">Mentions légales</a>
     </div>
   </div>
 </footer>
@@ -38,24 +41,37 @@ const socialLinks = [
 
   .footer__inner {
     display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer__top {
+    display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
 
-  .footer__logo {
-    font-family: var(--font-display);
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: var(--accent);
-    display: block;
-    margin-bottom: var(--space-sm);
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .footer__bottom-left {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+
+  .footer__ordre-logo {
+    width: 160px;
+    height: auto;
   }
 
   .footer__address {
     font-size: 0.85rem;
     color: var(--on-dark);
     line-height: 1.6;
-    margin-bottom: var(--space-xs);
   }
 
   .footer__legal {
@@ -65,10 +81,8 @@ const socialLinks = [
   }
 
   .footer__legal-link {
-    display: inline-block;
     font-size: 0.75rem;
     color: var(--on-surface-tertiary);
-    margin-top: var(--space-xs);
     border-bottom: 1px solid transparent;
     transition: color 0.2s, border-color 0.2s;
   }
@@ -96,8 +110,14 @@ const socialLinks = [
   }
 
   @media (max-width: 767px) {
-    .footer__inner {
+    .footer__top {
       flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .footer__bottom {
+      flex-direction: column;
+      align-items: flex-start;
       gap: var(--space-md);
     }
 
