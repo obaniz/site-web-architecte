@@ -1,7 +1,7 @@
 ---
 title: Cabinet dentaire
 slug: cabinet-dentaire
-category: medical
+category: [medical, bureaux]
 location: Libourne (33)
 description: "Rénovation et extension d'un cabinet dentaire "
 heroImage: /images/projects/cab-lucile-hero.jpg

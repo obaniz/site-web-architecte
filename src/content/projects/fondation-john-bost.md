@@ -1,7 +1,7 @@
 ---
 title: Fondation John Bost
 slug: fondation-john-bost
-category: medical
+category: [medical]
 location: La force (24)
 description: Aménagement d'un hôpital de jour pour la Fondation John Bost
 heroImage: /images/projects/fondation-john-bost-hero.jpg

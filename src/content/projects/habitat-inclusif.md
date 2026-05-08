@@ -1,7 +1,7 @@
 ---
 title: Habitat inclusif pour la Fondation John Bost
 slug: habitat-inclusif
-category: habitat
+category: [habitat]
 location: Bergerac (24)
 description: Extension et rénovation globale pour la création d'un habitat
   inclusif pour 3 personnes.

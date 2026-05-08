@@ -1,7 +1,7 @@
 ---
 title: Micro-crèche à Arveyres
 slug: micro-creche-arveyres
-category: petite-enfance
+category: [petite-enfance]
 location: Arveyres (33)
 description: Transformation d'un pavillon en micro-crèche accueillant 12 enfants
   pour Les Chérubins

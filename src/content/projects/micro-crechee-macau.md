@@ -1,7 +1,7 @@
 ---
 title: Micro-crèche à Macau
 slug: micro-crechee-macau
-category: petite-enfance
+category: [petite-enfance]
 location: Macau (33)
 description: Transformation d'un pavillon en micro-crèche Les Crèches Câlines
   accueillant 14 enfants.

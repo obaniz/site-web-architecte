@@ -1,7 +1,7 @@
 ---
 title: Maison Se
 slug: maison-se
-category: habitat
+category: [habitat]
 location: Pessac (33)
 description: Extension d'une maison individuelle à Pessac
 heroImage: /images/projects/maison-se-hero.jpg

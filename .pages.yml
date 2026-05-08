@@ -26,10 +26,12 @@ content:
           message: "Uniquement des lettres minuscules, chiffres et tirets."
 
       - name: category
-        label: Categorie
+        label: "Categories (2 max)"
         type: select
         required: true
         options:
+          multiple: true
+          max: 2
           values:
             - { value: habitat, label: Habitat }
             - { value: medical, label: Medical }

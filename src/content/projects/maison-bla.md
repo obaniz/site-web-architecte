@@ -1,7 +1,7 @@
 ---
 title: Maison Bla
 slug: maison-bla
-category: habitat
+category: [habitat]
 location: Blanquefort (33)
 description: Extension sur 2 niveaux d'une maison pour la création de deux
   chambres d'enfants.

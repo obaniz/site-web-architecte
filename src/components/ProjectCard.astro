@@ -3,10 +3,9 @@ interface Props {
   title: string;
   slug: string;
   heroImage: string;
-  category: string;
 }
 
-const { title, slug, heroImage, category } = Astro.props;
+const { title, slug, heroImage } = Astro.props;
 ---
 
 <a href={`/realisations/${slug}/`} class="project-card">

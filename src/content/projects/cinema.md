@@ -1,7 +1,7 @@
 ---
 title: "Cinéma 4DX© "
 slug: cinema
-category: erp
+category: [erp]
 location: Nantes, Angers, Levallois-Perret, Metz, Paris 13.
 description: Aménagement de 5 salles de cinéma 4DX© pour Gaumont Pathé.
 heroImage: /images/projects/cinema-hero.jpg

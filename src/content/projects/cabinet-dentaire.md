@@ -1,7 +1,7 @@
 ---
 title: Cabinet dentaire 2
 slug: cabinet-dentaire-2
-category: medical
+category: [medical, bureaux]
 location: Bordeaux
 description: "Aménagement d'une partie d'un cabinet dentaire et des locaux du personnel "
 heroImage: /images/projects/cabinet-dentaire-hero.jpg

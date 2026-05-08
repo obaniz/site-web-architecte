@@ -8,7 +8,7 @@ const projects = defineCollection({
     // Optionnel dans le schema Astro (le slug reel vient du nom de fichier),
     // mais Pages CMS ecrit ce champ dans le frontmatter : on l'accepte.
     slug: z.string().optional(),
-    category: z.enum(['habitat', 'medical', 'petite-enfance', 'bureaux', 'commerces', 'erp']),
+    category: z.array(z.enum(['habitat', 'medical', 'petite-enfance', 'bureaux', 'commerces', 'erp'])).min(1).max(2),
     location: z.string(),
     description: z.string(),
     heroImage: z.string(),

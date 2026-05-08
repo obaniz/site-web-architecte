@@ -17,12 +17,11 @@ const projects = (await getCollection('projects')).sort((a, b) => a.data.order -
 
     <div class="project-grid" id="project-grid">
       {projects.map((project) => (
-        <div data-category={project.data.category} class="project-card-wrapper">
+        <div data-categories={project.data.category.join(',')} class="project-card-wrapper">
           <ProjectCard
             title={project.data.title}
             slug={project.id}
             heroImage={project.data.heroImage}
-            category={project.data.category}
           />
         </div>
       ))}

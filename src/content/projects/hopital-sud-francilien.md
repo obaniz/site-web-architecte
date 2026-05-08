@@ -1,7 +1,7 @@
 ---
 title: Hôpital Sud Francilien
 slug: hopital-sud-francilien
-category: medical
+category: [medical]
 location: Corbeil-Essonne (91)
 description: "Restructuration de services divers: urgences pédiatriques,
   psychiatrie, morgue, archives, amphithéâtre, EHPAD."

@@ -1,7 +1,7 @@
 ---
 title: Maison Pauline
 slug: maison-pauline
-category: habitat
+category: [habitat]
 location: Bordeaux centre
 description: Surélévation et rénovation globale d'une maison de ville. Echoppe en pierre.
 heroImage: /images/projects/maison-pauline-hero.jpg

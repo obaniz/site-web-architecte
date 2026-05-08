@@ -1,7 +1,7 @@
 ---
 title: Atelier de céramiste
 slug: atelier-ceramiste
-category: commerces
+category: [commerces]
 location: Bordeaux
 description: Création de devanture rue Notre-Dame aux Chartrons
 heroImage: /images/projects/atelier-ceramiste-hero.jpg

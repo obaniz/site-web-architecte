@@ -1,7 +1,7 @@
 ---
 title: Hôpital de jour
 slug: hopital-de-jour
-category: medical
+category: [medical]
 location: Evry-courcouronnes (91)
 description: Aménagement d'un hôpital de jour, d'un CATTP et d'un centre
   médico-psychologique

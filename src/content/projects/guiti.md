@@ -1,7 +1,7 @@
 ---
 title: Maison Léo
 slug: guiti
-category: habitat
+category: [habitat]
 location: Le Bouscat (33)
 description: "Extension d'une maison individuelle au Bouscat "
 heroImage: /images/projects/guiti-hero.jpg

@@ -1,7 +1,7 @@
 ---
 title: Lycée professionnel
 slug: lycee-professionnel
-category: erp
+category: [erp]
 location: Saint-Amand-Montrond (18)
 description: "Extension d'un lycée professionnel pour la création de l'accueil
   du lycée et d'un CDI. "
