@@ -16,12 +16,13 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
     <ProjectFilter />
 
     <div class="project-grid" id="project-grid">
-      {projects.map((project) => (
+      {projects.map((project, i) => (
         <div data-categories={project.data.category.join(',')} class="project-card-wrapper">
           <ProjectCard
             title={project.data.title}
             slug={project.id}
             heroImage={project.data.heroImage}
+            loading={i < 3 ? 'eager' : 'lazy'}
           />
         </div>
       ))}
@@ -38,8 +39,9 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
   }
 
   .project-card-wrapper {
-    aspect-ratio: 16 / 9;
+    position: relative;
     overflow: hidden;
+    padding-bottom: 56.25%;
   }
 
   @media (max-width: 1023px) {
