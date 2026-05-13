@@ -4,13 +4,14 @@ interface Props {
   slug: string;
   heroImage: string;
   loading?: 'eager' | 'lazy';
+  alt?: string;
 }
 
-const { title, slug, heroImage, loading = 'lazy' } = Astro.props;
+const { title, slug, heroImage, loading = 'lazy', alt } = Astro.props;
 ---
 
 <a href={`/realisations/${slug}/`} class="project-card">
-  <img src={heroImage} alt={title} class="project-card__image" width="640" height="360" loading={loading} decoding="async" />
+  <img src={heroImage} alt={alt || title} class="project-card__image" width="640" height="360" loading={loading} decoding="async" />
   <div class="project-card__overlay">
     <h3 class="project-card__title">{title}</h3>
   </div>

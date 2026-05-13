@@ -5,14 +5,15 @@ interface Props {
   image: string;
   imageAlt: string;
   reversed?: boolean;
+  loading?: 'eager' | 'lazy';
 }
 
-const { title, description, image, imageAlt, reversed = false } = Astro.props;
+const { title, description, image, imageAlt, reversed = false, loading = 'lazy' } = Astro.props;
 ---
 
 <div class:list={['prestation', { 'prestation--reversed': reversed }]}>
   <div class="prestation__image-wrapper">
-    <img src={image} alt={imageAlt} class="prestation__image" loading="lazy" />
+    <img src={image} alt={imageAlt} class="prestation__image" width="1200" height="900" loading={loading} decoding="async" />
   </div>
   <div class="prestation__text">
     <h2 class="text-title">{title}</h2>

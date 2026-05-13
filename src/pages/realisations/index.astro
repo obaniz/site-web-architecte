@@ -12,6 +12,7 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
   titleOverride={true}
   description="Découvrez les réalisations du cabinet Caroline Guigné Architecte à Bordeaux : maisons individuelles, extensions, rénovations, cabinets médicaux, crèches, bureaux et ERP en Gironde."
   breadcrumbs={[{ name: 'Réalisations', href: '/realisations/' }]}
+  preloadImage={projects[0]?.data.heroImage}
 >
   <div class="container">
     <h1 class="sr-only">Réalisations</h1>
@@ -25,6 +26,7 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
             slug={project.id}
             heroImage={project.data.heroImage}
             loading={i < 3 ? 'eager' : 'lazy'}
+            alt={project.data.description}
           />
         </div>
       ))}

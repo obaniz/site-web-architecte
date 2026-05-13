@@ -19,6 +19,8 @@ interface Props {
   noindex?: boolean;
   /** Fil d'Ariane pour les données structurées */
   breadcrumbs?: BreadcrumbItem[];
+  /** Image LCP à précharger dans le <head> */
+  preloadImage?: string;
 }
 
 const {
@@ -28,6 +30,7 @@ const {
   ogImage = '/images/og-default.jpg',
   noindex = false,
   breadcrumbs = [],
+  preloadImage,
 } = Astro.props;
 
 const pageTitle = titleOverride ? title : `${title} | Caroline Guigné Architecte`;
@@ -97,6 +100,8 @@ const breadcrumbJsonLd = allCrumbs.length > 1 ? {
     {noindex && <meta name="robots" content="noindex,nofollow" />}
     <link rel="icon" href="/logo.jpg" />
 
+    {preloadImage && <link rel="preload" as="image" href={preloadImage} fetchpriority="high" />}
+
     <!-- Google Fonts (preconnect + stylesheet) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -117,6 +122,7 @@ const breadcrumbJsonLd = allCrumbs.length > 1 ? {
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:alt" content={description} />
     <meta property="og:locale" content="fr_FR" />
 
     <!-- Twitter Card -->
@@ -124,6 +130,7 @@ const breadcrumbJsonLd = allCrumbs.length > 1 ? {
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={description} />
 
     <title>{pageTitle}</title>
 

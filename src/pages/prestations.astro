@@ -39,17 +39,19 @@ const prestations = [
   titleOverride={true}
   description="Étude de faisabilité, conception, dépôt de permis de construire, suivi de chantier : découvrez l'ensemble des prestations d'architecture proposées par le cabinet Caroline Guigné à Bordeaux."
   breadcrumbs={[{ name: 'Prestations', href: '/prestations/' }]}
+  preloadImage="/images/prestations/faisabilite.jpg"
 >
   <div class="container">
     <h1 class="sr-only">Prestations</h1>
     <div class="prestations-list">
-      {prestations.map((p) => (
+      {prestations.map((p, i) => (
         <PrestationBlock
           title={p.title}
           description={p.description}
           image={p.image}
           imageAlt={p.imageAlt}
           reversed={p.reversed}
+          loading={i === 0 ? 'eager' : 'lazy'}
         />
       ))}
     </div>

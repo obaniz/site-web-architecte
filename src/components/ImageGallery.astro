@@ -11,7 +11,7 @@ const { images, alt } = Astro.props;
   <div class="gallery">
     {images.map((src, i) => (
       <div class="gallery__item" data-gallery-trigger>
-        <img src={src} alt={`${alt} - ${i + 1}`} loading="lazy" class="gallery__image" />
+        <img src={src} alt={`${alt} - ${i + 1}`} width="800" height="600" loading="lazy" decoding="async" class="gallery__image" />
       </div>
     ))}
   </div>

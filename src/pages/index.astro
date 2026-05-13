@@ -22,7 +22,7 @@ const projectsToShow = featuredProjects.length > 0
 
 const slides = projectsToShow.map((p) => ({
   image: p.data.heroImage,
-  alt: p.data.title,
+  alt: p.data.description,
 }));
 
 const heroImage = projectsToShow[0]?.data.heroImage ?? '/images/og-default.jpg';
@@ -33,6 +33,7 @@ const heroImage = projectsToShow[0]?.data.heroImage ?? '/images/og-default.jpg';
   description="Caroline Guigné, architecte HMONP inscrite à l'Ordre, vous accompagne à Bordeaux et en Gironde. Construction neuve, extension, rénovation et aménagement intérieur pour particuliers et professionnels."
   titleOverride={true}
   ogImage={heroImage}
+  preloadImage={heroImage}
 >
   <HeroCarousel slides={slides} />
 
