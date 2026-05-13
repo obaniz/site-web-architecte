@@ -1,59 +1,78 @@
-/chérubins-détail  /  301
-/chérubins-détail-1  /  301
-/chérubins-plans  /  301
-/copie-de-chérubins-arveyres-1  /  301
-/copie-de-chérubins-rosieres  /  301
-/copie-de-chérubins-vendeville  /  301
-/copie-de-domino-s-2  /  301
-/copie-de-hospitalier  /  301
-/copie-de-kantys-menton  /  301
-/copie-de-kantys-menton2  /  301
-/copie-de-kantys-menton2-1  /  301
-/copie-de-kantys-menton2-2  /  301
-/copie-de-kantys-menton3  /  301
-/copie-de-les-creches-calines-macau1  /  301
-/copie-de-les-creches-calines-macau1-1  /  301
-/copie-de-les-creches-calines-mérignac1  /  301
-/copie-de-maison-lulu-3  /  301
-/copie-de-maison-lulu-4  /  301
-/copie-de-mini-extension  /  301
-/copie-de-mini-extension-2  /  301
-/copie-de-mini-extension-2-1  /  301
-/copie-de-mérignac-1  /  301
-/copie-de-mérignac-2  /  301
-/copie-de-mérignac-3  /  301
-/copie-de-pers  /  301
-/copie-de-pers-1  /  301
-/copie-de-photo-sur-jardin  /  301
-/copie-de-photo-sur-jardin-1  /  301
-/copie-de-photo2  /  301
-/copie-de-photos  /  301
-/copie-de-pièces-de-vie-2  /  301
-/copie-de-pièces-de-vie-3  /  301
-/copie-de-plans  /  301
-/copie-de-plans-1  /  301
-/copie-de-principe  /  301
-/copie-de-process  /  301
-/copie-de-réalisations  /  301
-/copie-de-résidentiel  /  301
-/copie-de-résidentiel-1  /  301
-/copie-de-santé  /  301
-/copie-de-santé2  /  301
-/copie-de-santé3  /  301
-/copie-de-surrélévation-1  /  301
-/copie-de-surélévation-2  /  301
-/coupe-1  /  301
-/coupes  /  301
-/facade-est  /  301
-/facades  /  301
-/hospitalier  /  301
-/pers  /  301
-/plans  /  301
-/plans-du-projet  /  301
-/plans-existants  /  301
-/plans-pro  /  301
-/plans-projet  /  301
-/residentiel  /  301
-/richer  /  301
-/richer2  /  301
-/réseaux-sociaux  /  301
+# Maison Lulu
+/copie-de-maison-lulu-3  /realisations/maison-lulu/  301
+/copie-de-maison-lulu-4  /realisations/maison-lulu/  301
+
+# Maison Pauline (surélévation)
+/copie-de-surrélévation-1  /realisations/maison-pauline/  301
+/copie-de-surélévation-2  /realisations/maison-pauline/  301
+
+# Micro-crèche Arveyres
+/chérubins-détail  /realisations/micro-creche-arveyres/  301
+/chérubins-détail-1  /realisations/micro-creche-arveyres/  301
+/chérubins-plans  /realisations/micro-creche-arveyres/  301
+/copie-de-chérubins-arveyres-1  /realisations/micro-creche-arveyres/  301
+
+# Micro-crèche Macau
+/copie-de-les-creches-calines-macau1  /realisations/micro-crechee-macau/  301
+/copie-de-les-creches-calines-macau1-1  /realisations/micro-crechee-macau/  301
+
+# Micro-crèches Les Crèches Câlines
+/copie-de-les-creches-calines-mérignac1  /realisations/micro-creches-les-creches-calines/  301
+/copie-de-mérignac-1  /realisations/micro-creches-les-creches-calines/  301
+/copie-de-mérignac-2  /realisations/micro-creches-les-creches-calines/  301
+/copie-de-mérignac-3  /realisations/micro-creches-les-creches-calines/  301
+/copie-de-chérubins-rosieres  /realisations/micro-creches-les-creches-calines/  301
+/copie-de-chérubins-vendeville  /realisations/micro-creches-les-creches-calines/  301
+
+# Laboratoires Kantys
+/copie-de-kantys-menton  /realisations/laboratoire-analyses/  301
+/copie-de-kantys-menton2  /realisations/laboratoire-analyses/  301
+/copie-de-kantys-menton2-1  /realisations/laboratoire-analyses/  301
+/copie-de-kantys-menton2-2  /realisations/laboratoire-analyses/  301
+/copie-de-kantys-menton3  /realisations/laboratoire-analyses/  301
+
+# Hôpital
+/copie-de-hospitalier  /realisations/hopital-sud-francilien/  301
+/hospitalier  /realisations/hopital-sud-francilien/  301
+/copie-de-santé  /realisations/hopital-de-jour/  301
+/copie-de-santé2  /realisations/hopital-de-jour/  301
+/copie-de-santé3  /realisations/hopital-de-jour/  301
+
+# Prestations
+/copie-de-process  /prestations/  301
+/copie-de-principe  /prestations/  301
+
+# Contact
+/réseaux-sociaux  /contact/  301
+
+# Réalisations (pages génériques ou projets non identifiés)
+/copie-de-réalisations  /realisations/  301
+/copie-de-résidentiel  /realisations/  301
+/copie-de-résidentiel-1  /realisations/  301
+/residentiel  /realisations/  301
+/copie-de-domino-s-2  /realisations/  301
+/copie-de-mini-extension  /realisations/  301
+/copie-de-mini-extension-2  /realisations/  301
+/copie-de-mini-extension-2-1  /realisations/  301
+/copie-de-photo-sur-jardin  /realisations/  301
+/copie-de-photo-sur-jardin-1  /realisations/  301
+/copie-de-pièces-de-vie-2  /realisations/  301
+/copie-de-pièces-de-vie-3  /realisations/  301
+/copie-de-photo2  /realisations/  301
+/copie-de-photos  /realisations/  301
+/copie-de-pers  /realisations/  301
+/copie-de-pers-1  /realisations/  301
+/copie-de-plans  /realisations/  301
+/copie-de-plans-1  /realisations/  301
+/coupe-1  /realisations/  301
+/coupes  /realisations/  301
+/facade-est  /realisations/  301
+/facades  /realisations/  301
+/plans  /realisations/  301
+/plans-du-projet  /realisations/  301
+/plans-existants  /realisations/  301
+/plans-pro  /realisations/  301
+/plans-projet  /realisations/  301
+/pers  /realisations/  301
+/richer  /realisations/  301
+/richer2  /realisations/  301

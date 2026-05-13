@@ -3,7 +3,7 @@ title: Maison Lulu
 slug: maison-lulu
 category: [habitat]
 location: Libourne (33)
-description: Rénovation lourde d'une maison centenaire à Libourne
+description: "Rénovation lourde d'une maison centenaire à Libourne (33). Bardage mélèze, grandes baies vitrées et continuité intérieur-jardin."
 heroImage: /images/projects/maison-lulu-hero.jpg
 images:
   - /images/projects/maison-lulu-vue.jpg

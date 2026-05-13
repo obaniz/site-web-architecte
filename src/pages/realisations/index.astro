@@ -13,6 +13,7 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
   breadcrumbs={[{ name: 'Réalisations', href: '/realisations/' }]}
 >
   <div class="container">
+    <h1 class="sr-only">Réalisations</h1>
     <ProjectFilter />
 
     <div class="project-grid" id="project-grid">

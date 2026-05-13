@@ -22,6 +22,7 @@ const projectsToShow = featuredProjects.length > 0
 
 const slides = projectsToShow.map((p) => ({
   image: p.data.heroImage,
+  alt: p.data.title,
 }));
 
 const heroImage = projectsToShow[0]?.data.heroImage ?? '/images/og-default.jpg';

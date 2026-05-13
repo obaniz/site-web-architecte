@@ -1,5 +1,5 @@
 /* ===== FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Work+Sans:wght@300;400;500&display=swap');
+/* Google Fonts chargées via <link> dans BaseLayout.astro (preconnect + non-blocking) */
 
 /* ===== DESIGN TOKENS ===== */
 :root {
@@ -112,6 +112,18 @@ button {
   font-weight: 300;
   font-size: var(--text-body);
   line-height: 1.5;
+}
+
+/* ===== ACCESSIBILITY ===== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 /* ===== UTILITIES ===== */

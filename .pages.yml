@@ -46,9 +46,13 @@ content:
         required: true
 
       - name: description
-        label: Description courte (affichee dans les listes)
+        label: "Description SEO (non affiche sur le site mais utilise par Google, idealement 120-150 caracteres)"
         type: string
         required: true
+
+      - name: body
+        label: "Contenu detaille (texte long, affiche sur la page du projet)"
+        type: text
 
       - name: heroImage
         label: "Photo principale"
@@ -82,6 +86,3 @@ content:
         label: "Position dans le carrousel (1 = premier, laisser vide si non featured)"
         type: number
 
-      - name: body
-        label: Contenu detaille (texte long, affiche sur la page du projet)
-        type: text

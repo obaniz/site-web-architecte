@@ -3,7 +3,7 @@ title: Maison Se
 slug: maison-se
 category: [habitat]
 location: Pessac (33)
-description: Extension d'une maison individuelle à Pessac
+description: "Extension d'une maison individuelle à Pessac (33). Bardage bois à claire-voie et brise-soleil modulables. Permis accepté."
 heroImage: /images/projects/maison-se-hero.jpg
 images:
   - /images/projects/maison-se-axo.jpg

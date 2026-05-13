@@ -3,8 +3,7 @@ title: Micro-crèches Les Crèches Câlines
 slug: micro-creches-les-creches-calines
 category: [petite-enfance]
 location: Gironde
-description: Transformation de pavillons en micro-crèches accueillant 14 enfants
-  à Ambarès, Izon et Mérignac (33)
+description: "Transformation de pavillons en micro-crèches de 14 enfants à Ambarès, Izon et Mérignac (33) pour Les Crèches Câlines."
 heroImage: /images/projects/creches-calines-hero.jpg
 images:
   - /images/projects/creches-calines-ambares.jpg
