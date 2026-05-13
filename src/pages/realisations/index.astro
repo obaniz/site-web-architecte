@@ -8,8 +8,9 @@ const projects = (await getCollection('projects')).filter((p) => p.data.listed).
 ---
 
 <BaseLayout
-  title="Réalisations"
-  description="Découvrez les projets réalisés par Caroline Guigné Architecte à Bordeaux : maisons, extensions, rénovations, cabinets médicaux, commerces et ERP. Photos et détails de chaque réalisation."
+  title="Réalisations — Caroline Guigné Architecte à Bordeaux"
+  titleOverride={true}
+  description="Découvrez les réalisations du cabinet Caroline Guigné Architecte à Bordeaux : maisons individuelles, extensions, rénovations, cabinets médicaux, crèches, bureaux et ERP en Gironde."
   breadcrumbs={[{ name: 'Réalisations', href: '/realisations/' }]}
 >
   <div class="container">

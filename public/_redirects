@@ -45,7 +45,14 @@
 # Contact
 /réseaux-sociaux  /contact/  301
 
+# Agence (anciennes URLs)
+/presentation-agence  /agence/  301
+/presentation-de-l-agence  /agence/  301
+/l-agence  /agence/  301
+/lagence  /agence/  301
+
 # Réalisations (pages génériques ou projets non identifiés)
+/plan-existant  /realisations/  301
 /copie-de-réalisations  /realisations/  301
 /copie-de-résidentiel  /realisations/  301
 /copie-de-résidentiel-1  /realisations/  301
