@@ -6,9 +6,9 @@ category:
 location: Corbeil-Essonne (91)
 description: "Restructuration hospitalière à Corbeil-Essonne (91) : urgences
   pédiatriques, psychiatrie, EHPAD, archives et amphithéâtre. Contrat cadre."
-heroImage: /images/projects/hsf réduit.jpg
+heroImage: /images/projects/hsf reduit pdg (1).jpg
 images:
-  - /images/projects/hopital-sud-francilien-vue.jpg
+  - /images/projects/hsf reduit pdg (1)-1.jpg
 order: 18
 listed: true
 featured: false
