@@ -7,9 +7,9 @@ location: Evry-courcouronnes (91)
 description: Aménagement d'un hôpital de jour, CATTP et centre
   médico-psychologique à Évry-Courcouronnes (91). Programmation, esquisse,
   permis, DCE et chantier.
-heroImage: /images/projects/hdj titré réduit.jpg
+heroImage: /images/projects/hdj titré pdg (1).jpg
 images:
-  - /images/projects/hopital-de-jour-vue.jpg
+  - /images/projects/hdj titré pdg (1)-1.jpg
 order: 19
 listed: true
 featured: false
