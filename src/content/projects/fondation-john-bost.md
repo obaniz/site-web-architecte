@@ -11,6 +11,8 @@ heroImage: /images/projects/fondation-john-bost-hero.jpg
 images:
   - /images/projects/explain.jpg
   - /images/projects/fondation-john-bost-axo.jpg
+  - /images/projects/rdc (1).jpg
+  - /images/projects/r+1.jpg
 order: 6
 listed: true
 featured: false
